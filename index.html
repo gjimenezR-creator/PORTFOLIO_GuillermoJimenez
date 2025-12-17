@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/586681f6a7.js" crossorigin="anonymous"></script>
+	<title>Portfolio-Guillermo Jimenez</title>
+	<link rel="stylesheet" href="skippr-master/skippr-master/dist/skippr.css">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			margin: 0;
+			font-family: "Arimo", sans-serif;
+		}
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		/*HEADER*/
+		
+		header{
+			width: 100%;
+			height: 50vh;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.VIDEOCAB{
+			width: 100%;
+			height: auto;
+			filter: blur(8px);
+			z-index: -1;
+			position: absolute;
+			border-radius: 50px;
+		}
+
+		.menu{
+			width: 100%;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+			position: fixed;
+			z-index: 99999;
+		}
+
+		.enlaces{
+			text-align: center;
+			width: 10%;
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+		}
+
+		.Bienvenida{
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.portfolio{
+			font-size: 100px;
+			margin: 40px;
+			color: white;
+		}
+
+		.Nombre{
+			font-size: 40px;
+			color: white;
+		}
+
+		/*SECCION-ABOUT ME*/
+
+		.sobremi{
+			height: 120vh;
+			display: flex;
+			width: 100%;
+			background-color: #0D0D0D;
+		}
+		.YO{
+			width: 450px;
+			height: auto;
+			border: solid 2px black;
+			border-radius: 50px;
+		}
+
+		.contenedor1{
+			flex-grow: 1;
+			width: 200px;
+			display: flex;
+			flex-direction: column;
+			margin: 50px;
+			align-items: center;
+		}
+
+		#container1{
+			height: 90%;
+			
+		}
+
+		.contenedor2{
+			flex-grow: 1;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			background-color: #1F1F1F;
+			border: 2px solid white;
+			border-radius: 40px;
+		}
+
+		.contenedor3{
+			flex-grow: 1;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			background-color: #1F1F1F;
+			border: 2px solid white;
+			border-radius: 40px;
+			margin-top: 20px;
+			padding: 30px;
+/* 			padding-top: 20px; */
+		}
+
+		.contenedor4{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-right: 0px;
+			flex-grow: 1;	
+			width: 150%;	}
+
+		.contenedor5{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-left: 40px;
+			flex-grow: 1;
+			width: 100%;
+		}
+
+		.descripcion{
+			padding-left: 50px;
+			padding-right: 50px;
+			font-size: 18px;
+			color: #CFCFCF;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li{
+			padding-bottom: 15px;
+			font-size: 18px;
+			color: #CFCFCF;
+			width: 100%;
+		}
+
+		.EXP, .EDC, .ABOUT{
+			font-size: 30px;
+			color: #FFFFFF;
+		}
+
+		/*HABILIDADES y SOFTWARES*/
+
+		.HAB{
+			height: 35vh;
+			display: flex;
+			width: 100%;
+			background-color: #0D0D0D;
+			color: white;
+			margin: ;
+		}
+
+		 .APPS{
+			width: 60px;
+		}
+		
+		.divsAPPS{
+			/*width: 25%;*/
+			flex-grow: 1;
+			text-align: center;
+			padding-left: 20px;
+		}
+		
+		.contenedor1HAB{
+			flex-grow: 3;
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			margin-right: 20px;
+			margin-left: 20px;
+		}
+
+		.contenedor2HAB{
+			flex-grow: 1;
+			border: solid 2px white;
+			border-radius: 10px;	
+			padding-left: 10px;
+			padding-right: 10px;
+			background-color: #1F1F1F;
+			display: flex;
+			flex-direction: column;
+			margin: 0 40px		
+		}
+
+		.contenedorAPPS{
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			/*flex-direction: row;*/
+		}
+
+		#dosPrimerasAPP, #dosSegundasAPP{
+			display: flex;
+		}
+
+		#dosprimerasSK, #dossegundasSK{
+			display: flex;
+		}
+		
+		.textAPSS{
+			font-size: 18px;
+			text-align: left;
+			color: #CFCFCF;
+		}
+
+		.contenedorSKILLS{
+			display: flex;
+			flex-grow: 1;
+			justify-content: center;
+		}
+
+		.divsSKILLS{
+			flex-grow: 1;
+			font-size: 18px;
+			margin-left: 40px;
+		}
+
+		.textskills{
+			font-size: 20px;
+			text-align: center;
+			color: #CFCFCF;
+		}
+
+		.textHAB{
+			text-align: center;
+		} 
+
+		img{
+			width: 400px;
+			height: auto;
+		}
+
+		#color1, #color2, #color3, #color4{
+			text-align: center;
+		}
+
+		#color1{
+			background-color: #0B1AAC;
+			width: 75%;
+		}
+
+		#color2{
+			background-color: #DDDA05;
+			width: 60%;
+		}
+
+		#color3{
+			background-color: #AC0B0B;
+			width: 30%;
+		}
+
+		#color4{
+			background-color: #0BAC22;
+			width: 80%;
+		}
+
+		/*SKIPPR*/
+
+		#container{
+			width: 100%;
+			height: 120vh;
+			position: relative;
+			background-color: #0D0D0D; 
+			padding-top: 50px;
+		}
+
+		#theTarget{
+			height: 100%;
+		}
+
+		#TITLE{
+			margin-bottom: 20px;
+			margin-top: 0;
+			text-align: center;
+			font-size: 40px;
+			color: #FFFFFF;
+		}
+
+		/*footer*/
+
+		footer{
+			padding-top: 120px;
+			height: 40vh;
+			width: 100%;
+			background-color: #0D0D0D;
+			text-align: center;
+		}
+
+		.redes{
+			color: #CFCFCF;
+			display: inline;
+			font-size: 25px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		hr{
+			width: 60%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		i{
+			font-size: 50px;
+			padding-left: 100px;
+			padding-right: 100px;
+			color: #00E0FF;
+		}
+
+		@media (max-width: 1105px){
+			#container1{
+				flex-grow: 3;
+			}
+
+			.YO{
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 1030px){
+			.enlaces{
+				font-size: 16px;
+				margin-right: 50px;
+			}
+			.sobremi{
+        		flex-direction: column;      
+       			 align-items: center;
+       		 	height: auto;
+        		padding: 20px;
+    		}
+
+    		#container1{
+        		display: flex;
+        		flex-direction: row;         
+        		justify-content: space-between;
+        		width: 100%;
+        		max-width: 900px;
+        		margin-bottom: 20px;
+    		}
+
+    		.contenedor2{
+        		width: 30%;
+        		margin-right: 10px;
+    		}
+
+    		.contenedor3{
+        		width: 48%;
+       		 margin-left: 10px;
+    		}
+
+    		.contenedor4, .contenedor5, .contenedor3, .contenedor2{
+    			overflow-wrap: break-word;
+    			word-wrap: break-word;
+    			hyphens: auto;
+    		}
+
+    		.contenedor4, .contenedor5{
+    			height: auto;
+    		}
+
+    		.YO{
+        		width: 150%;          
+        		margin-top: 20px;
+    		}
+
+    		.ABOUT, .EXP, .EDC{
+    			font-size: 25px;
+    		}
+
+    		li, .descripcion{
+    			font-size: 16px;
+    		}
+
+    		.textAPSS, .textskills{
+			font-size: 16px;
+			}
+
+			.textHAB{
+				font-size: 25px;
+			}
+
+			#dosPrimerasAPP, #dosSegundasAPP, #dosprimerasSK, #dossegundasSK{
+				flex-direction: column;
+
+			}
+
+			#after{
+				padding-left: 25px;
+			}
+
+			#TITLE{
+				font-size: 30px;
+			}
+
+			.redes{
+				font-size: 20px;
+			}
+
+			i{
+				font-size: 40px;
+			}
+
+		}
+
+		@media (max-width: 800px){
+			.EXP, .ABOUT, .EDC, .textHAB{
+				font-size: 22px;
+			}
+
+			.enlaces, li, .descripcion, .textAPSS, .textskills{
+				font-size: 14px;
+			}
+
+			.descripcion{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+			#TITLE{
+				font-size: 25px;
+			}
+
+			.redes{
+				font-size: 18px;
+			}
+
+			i{
+				font-size: 35px;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+			hr{
+				width: 80%;
+			}
+
+			header{
+				height: 30vh;
+			}
+
+			.Bienvenida{
+				padding-top: 0;
+			}
+
+			.portfolio{
+				font-size: 70px;
+				margin: 20px;
+			}
+
+			.Nombre{
+				font-size: 30px;
+				margin: 10px;
+			}
+
+			
+		}
+
+		@media (max-width: 620px){
+			#container1{
+				flex-direction: column;
+			}
+
+			.contenedor2, .contenedor3{
+				width: 100%;
+			}
+
+			.contenedorAPPS, .contenedorSKILLS{
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.HAB{
+				height: 60vh;
+			}
+
+			.textAPSS{
+				text-align: center;
+			}
+
+			.divsAPPS{
+				padding: 0;
+			}
+
+			.divsSKILLS{
+				margin-left: 0;
+			}
+
+			#after{
+				padding: 0;
+			}
+
+			.redes{
+				padding: 0;
+			}
+
+			#color1{
+				width: 130%;
+			}
+
+			#color2{
+				width: 80%;
+			}
+
+			#color4{
+				width: 90%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<header id="cabecera">
+		<video class="VIDEOCAB" autoplay muted loop src="FOTOSyVIDEOS/Jimenez_Guillermo_Animacion.mp4"></video>
+		<div class="menu">
+			<a class="enlaces" href="#cabecera">Home</a>
+			<a class="enlaces" href="#aboutme">About Me</a>
+			<a class="enlaces" href="#HABilidad">Habilidades</a>
+			<a class="enlaces" href="#container">Proyectos</a>
+			<a class="enlaces" href="#contacto">Contacto</a>
+		</div>
+		<div class="Bienvenida">
+			<h1 class="portfolio">PORTFOLIO</h1>
+			<h2 class="Nombre">Guillermo Jiménez Rodríguez</h2>
+		</div>
+	</header>
+
+	<section id="aboutme">
+		<div class="sobremi">	
+			<div class="contenedor1" id="container1">
+				<div class="contenedor2">
+					<h1 class="ABOUT">ABOUT ME</h1>
+					<p class="descripcion">Soy Guillermo, estudiante del I.E.S Tierno Galván. Apasionado de la edición de video y el modelado, esos son mis puntos mas fuertes en softwares como blender, premier, photoshop y after effects, trabajador y siempre con ganas de aprender mucho más y de adquirir experiencia en todos los ámbitos, compañerismo y buen trabjador de equipo. Siempre enfocado al futuro y en seguir mejorando continuamente laboralmente. En cuanto a la experiencia hice practicas duales con empresas como MYTHO para la edición de video y empresas como Enefcto y Entharial Games para la animación, modelado y texturización. Me apasiona la creatividad y siempre lo doy todo por un proyecto que me gusta.</p>
+				</div> 
+				<div class="contenedor3">
+					<div class="contenedor4">
+						<h1 class="EXP">EXPERIENCIA</h1>
+						<ul>
+							<li>Prácticas duales en la empresa Enefcto sobre modelado, animación y texturizado</li>
+							<li>Prácticas duales en la empresa Entharial Games sobre modelado y animación</li>
+							<li>Prácticas duales en la empresa MYTHO sobre edición de video</li>
+						</ul>
+					</div>
+					<div class="contenedor5">
+						<h1 class="EDC">EDUCACIÓN</h1>
+						<ul>
+							<li>Bachillerato de ciencias tecnológicas en el I.E.S Pérez de Guzmán</li>
+							<li>Grado superior de animación 3D, juegos y entornos interacticos en el I.E.S Tierno Galván</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor1">
+				<img class="YO" src="FOTOSyVIDEOS/YO.jpg" alt="">
+			</div>
+		</div>		
+	</section>
+
+	<section class="HAB" id="HABilidad">
+			<div class="contenedor1HAB">
+				<h1 class="textHAB">SKILLS</h1>
+				<div class="contenedorSKILLS">
+					<div id="dosprimerasSK">
+						<div class="divsSKILLS">
+							<p class="textskills">MODELADO</p>
+							<div id="color1">65%</div>
+						</div>
+						<div class="divsSKILLS">
+							<p class="textskills">ANIMACIÓN</p>
+							<div id="color2">45%</div>
+						</div>
+					</div>
+					<div id="dossegundasSK">
+						<div class="divsSKILLS">
+							<p class="textskills">TEXTURIZADO</p>
+							<div id="color3">20%</div>
+						</div>
+						<div class="divsSKILLS">
+							<p class="textskills">EDICIÓN</p>
+							<div id="color4">55%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contenedor2HAB">
+				<h1 class="textHAB">APSS SKILLS</h1>
+				<div class="contenedorAPPS">
+					<div id="dosPrimerasAPP">
+						<div class="divsAPPS">
+							<p class="textAPSS">BLENDER</p>
+							<img class="APPS" src="FOTOSyVIDEOS/BLENDER.png" alt="">
+						</div>
+						<div class="divsAPPS">
+							<p class="textAPSS">PREMIER</p>
+							<img class="APPS" src="FOTOSyVIDEOS/PREMIER PRO.png" alt="">
+						</div>
+					</div>
+					<div id="dosSegundasAPP">
+						<div class="divsAPPS">
+							<p class="textAPSS">PHOTOSHOP</p>
+							<img class="APPS" src="FOTOSyVIDEOS/PHOTOSHOP.jpg" alt="">
+						</div>
+						<div class="divsAPPS">
+							<p class="textAPSS" id="after">AFTER</p>
+							<img class="APPS" src="FOTOSyVIDEOS/AFTER EFFECTS.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>  
+	<section id="container">
+			<p id="TITLE">ANIMACIÓN, MODELADO Y TEXTURIZADO</p>
+            <div id="grider-Animacion" class="TheTarget">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/itUJgDFVYSw?si=thTnwp2QvQm4SoPj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/giOe-pyrlW8?si=5yYFjlqCczUnnlmv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IKHVHsdSx60?si=TvT2EQf3zNupCEhS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0eUuG51BCAo?si=RnZ3yP7gi5bg66dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               	</video>
+               	<iframe width="100%" height="100%" src="https://www.youtube.com/embed/chilC8Og9pw?si=dXJFHYo-wTC0Cyad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div style="background-image: url(FOTOSyVIDEOS/FOTO1DeadPOOL.png)"></div>
+                <div style="background-image: url(FOTOSyVIDEOS/FOTO2DeadPOOL.png)"></div>
+                <div style="background-image: url(FOTOSyVIDEOS/Jimenez_Guillermo_Martillo.png)"></div>
+            </div> 
+	</section>
+
+
+	<section id="container">
+			<p id="TITLE">EDICIÓN</p>
+            <div id="grider-Edicion" class="TheTarget">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PBf9TFyMvAQ?si=E6vK6zTjkBR-Ftq6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/71muR4EK7CQ?si=tQSmxZ8g3Iddnbad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vLYvQVldtqk?si=DFIJvoThn0K7fK1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wHv-LvrkPPs?si=kFSro6hIXz9nmGFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oJSQ0CQlKWY?si=cm3F7H0w6q3qakwy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> 
+	</section>
+
+	<footer id="contacto">
+		<p class="redes">guillimon05@gmail.com</p>
+		<p class="redes">@guillejimenezz</p>
+		<p class="redes">@guillejimeneezz</p>
+		<hr>
+		<i class="fa-regular fa-envelope"></i>
+		<i class="fa-brands fa-instagram"></i>
+		<i class="fa-brands fa-tiktok"></i>
+		<hr>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-1.12.0.js" integrity="sha256-yFU3rK1y8NfUCd/B4tLapZAy9x0pZCqLZLmFL3AWb7s=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="skippr-master/skippr-master/dist/skippr.js"></script>
+	<script type="text/javascript">
+		    $(document).ready(function(){
+
+            $("#grider-Animacion").skippr();
+            $("#grider-Modelado").skippr();
+            $("#grider-Edicion").skippr();
+            $("#grider-Texturizado").skippr();
+
+        });    
+            
+	</script>
+
+
+<script>
+$(document).ready(function() {
+    var percent = 0;
+ 
+    timerId = setInterval(function() {
+        //increment progress bar
+        percent += 5;
+        $('.progress-bar').css('width', percent+'%');
+        $('.progress-bar').attr('aria-valuenow', percent);
+        $('.progress-bar').text(percent+'%');
+ 
+        //complete
+        if (percent == 100) {
+            clearInterval(timerId);
+            $('.information').show();
+        }
+ 
+    }, 1000);
+});
+</script>
+</body>
+</html>
